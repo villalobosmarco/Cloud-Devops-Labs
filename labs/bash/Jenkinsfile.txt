@@ -6,8 +6,9 @@ pipeline {
              sh 'echo "10" | ./labs/bash/script-1.sh'
              sh 'echo "/home" | ./labs/bash/script-2.sh'
              sh '''
-                    echo "Multiline shell steps works too"
-                    pwd
+                    echo null
+                    echo txt
+                    sh './labs/bash/script-3.sh'
                 '''
           }
        }
