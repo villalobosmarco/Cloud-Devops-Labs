@@ -4,7 +4,7 @@ pipeline {
 	      stage('build')	{
 			    steps	{
 			      sh 'echo "10" | ./labs/bash/script-1.sh'
-			      sh 'echo "11" | ./labs/bash/script-1.sh'
+			      sh 'echo "111" | ./labs/bash/script-1.sh'
 	        }
         }
       }
