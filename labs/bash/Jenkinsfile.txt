@@ -3,7 +3,7 @@ pipeline {
 	    stages	{
 	      stage('build')	{
 			    steps	{
-			      sh './home/villalobosmarco-github/Cloud-Devops-Labs/labs/bash/script-4.sh'
+			      sh './labs/bash/script-4.sh'
 			      }
 	        }
         }
