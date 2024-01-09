@@ -1,10 +1,11 @@
 pipeline {
-      agent any
-	    stages	{
-	      stage('build')	{
-			    steps	{
-			      sh 'echo "10" | ./labs/bash/script-1.sh'
-			      echo 'not using shell'
-	        }
-        }
-      }
+    agent any
+    stages {
+       stage('build') {
+          steps {
+             sh 'echo "10" | ./labs/bash/script-1.sh'
+             echo 'not using shell'
+          }
+       }
+    }
+}
