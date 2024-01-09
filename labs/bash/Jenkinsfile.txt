@@ -3,7 +3,7 @@ pipeline {
 	    stages	{
 	      stage('build')	{
 			    steps	{
-			      sh './labs/bash/script-4.sh'
+			      sh 'echo "10" | ./script-1.sh '
 			      }
 	        }
         }
