@@ -5,7 +5,7 @@ pipeline {
           steps {
              sh 'echo "10" | ./labs/bash/script-1.sh'
              sh 'echo "/home" | ./labs/bash/script-2.sh'
-             sh 'yes $'path\nextension' | sh ./labs/bash/script-3.sh'
+             sh 'yes $"path\nextension" | sh ./labs/bash/script-3.sh'
           }
        }
     }
