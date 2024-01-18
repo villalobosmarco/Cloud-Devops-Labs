@@ -1,1 +1,11 @@
+pipeline {
+    agent any
 
+    stages {
+        stage('Terraform Init') {
+            steps {
+                sh 'cd labs/terraform/jenkinsfile && terraform init'
+            }
+        }
+    }
+}
